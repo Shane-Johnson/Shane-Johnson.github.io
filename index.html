@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Michael Johnson | SKILLED AND DRIVEN</title>
+	<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="navbar">
+		<div class="navbar-left">
+			<a class="navbar-brand" href="#"><i class="fa fa-code"></i>Michael S. Johnson</a>
+		</div>
+
+		<div class="navbarRight">
+			<ul>
+				<li><a href="#about" class="smoothScrolls">About</a></li>
+				<li><a href="#experience" class="smoothScrolls">Experience</a></li>
+				<li><a href="#contact" class="smoothScrolls">Contact</a></li>
+				<li><a href="more.html" class="smoothScrolls">More</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="image-back-main">
+		<div id="gradient-main">
+			<div id="name">
+				<h3>Hi There,</h3>
+				<h1>I'm Michael Johnson</h1>
+				<hr>
+				<h3 id="typed">
+					<p id="desc"></p>
+				</h3>
+			</div>
+		</div>
+	</div>
+
+	<div id="about">
+		<h1>About</h1>
+		<hr>
+		<h3>I am a <em>professional</em> with the drive and ambition to make a significant contribution<br> to any project . I am ready to fulfill any assignment with the utmost speed and professionalism,<br> and to continue to utilize my skillset to assist with the creation and maintenance<br> of intellectual properties on the vanguard of technical development.</h3>
+	</div>
+
+
+	<div id="experience">
+		<div class="page-header">
+			<h1>Experience</h1>
+			<h4>A visual representation of my experience</h4>
+			<hr>
+		</div>
+
+		<ul class="exp">
+			<li class="timelineLeft">
+				<div class="badge"><i class="fa fa-rebel"></i></div>
+				<div class="exp-panel">
+					<p class="date"><i class="fa fa-calendar"></i>
+						<br><span class="month">June</span><span class="year"> 2011 - April 2014 </span></p>
+					<h4>Software Developer at Ocean Canyon Properties</h4>
+					<div class="exp-body">
+						<p>Played role in the design, installation, testing and maintenance of software systems.  Used a wide range of
+							tools (eg. Sublime, Visual Studio Code, etc.) to implement front end technologies, such as HTML, CSS,
+							JavaScript, and using libraries such as  AngularJS, and Bootstrap among others</p>
+					</div>
+				</div>
+			</li>
+
+			<ul class="exp">
+				<li class="timelineLeft">
+					<div class="badge"><i class="fa fa-rebel"></i></div>
+					<div class="exp-panel">
+						<p class="date"><i class="fa fa-calendar"></i>
+							<br><span class="month">April </span><span class="year">2014 - September 2017</span></p>
+						<h4>IT Technician at North-East Alabama Regional Medical Center</h4>
+						<div class="exp-body">
+							<p>Coordinated, with a small team, the maintenance of point of sale software and internal applications using
+								front end technologies eg. HTML, CSS, and Java. Diagnosed hardware issues and communicated any issues
+								effectively. Maintained a dialogue between the I.T. dept. and the nursing staff, to quickly resolve any and all
+								software/hardware issues.</p>
+						</div>
+					</div>
+				</li>
+
+				<li class="exp-inverted">
+					<div class="badge two"><i class="fa fa-refresh fa-spin"></i></div>
+					<div class="exp-panel">
+						<p class="date"><i class="fa fa-calendar"></i>
+							<br><span class="month">September </span><span class="year">2017</span> - Current</p>
+						<h4>Systems Analyst at Carnes Trucking</h4>
+						<div class="exp-body">
+							<p>Establish relationships by conferring with clients, Diagnose internal IT issues and collaborate with
+								engineers to develop and maintain internal Carnes Trucking user sites using front end technologies eg. HTML,
+								CSS, and JavaScript. Using Sublime to debug as well as implement changes within the Carnes intranet sites, and
+								also perform day to day operations within the Mcleod Loadmaster systems.</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+
+	</div>
+
+	<div id="contact">
+		<h1>Contact Me</h1>
+		<p>Coming together is a <em>beginning</em>;<br> keeping together is <em>progress</em>;<br> working together is <em>Success.</em><br>-Henry
+			Ford</p>
+		<hr>
+		<div class="col-md-7">
+			<h4>Name: <br>Michael Shane Johnson</h4>
+			<h4>Email:<br>M.Shane.Johnson.Jr@gmail.com</h4>
+			<h4>Number: <br>256-201-0061</h4>
+			<h4>Address: <br>2967 Hwy 78<br>Heflin, AL, 36264<br></h4>
+		</div>
+	</div>
+
+	<div id="social-icons">
+		<a class="fa fa-linkedin" href="https://www.linkedin.com/in/michael-johnson-jr/"></a>
+	</div>
+
+	<div id="footer">
+		<small>&copy; Michael S. Johnson 2018 All Rights Reserved</small>
+	</div>
+
+
+	<script>
+		var myText = function (letter, message, index, interval) {
+			if (index < message.length) {
+				$(letter).append(message[index++]);
+				setTimeout(function () { myText(letter, message, index, interval); }, interval);
+			}
+		};
+
+		$(function () {
+			myText("#desc", "Ready Set Code!", 0, 100);
+		});
+	</script>
+
+</body>
+
+</html>
